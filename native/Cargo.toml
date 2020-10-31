@@ -1,0 +1,18 @@
+[package]
+name = "parser"
+version = "0.1.0"
+authors = ["mmagdys <muhammad.magdy50@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+edition = "2018"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "parser"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.5.0"
+
+[dependencies]
+neon = "0.5.0"
